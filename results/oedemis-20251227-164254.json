@@ -1,0 +1,32 @@
+{
+  "participants": {
+    "agent": "019b601e-a0b5-7cd2-b881-31f3bf5508d3"
+  },
+  "results": [
+    {
+      "naive_accuracy": 0.0,
+      "class_balanced_accuracy": 0.0,
+      "avg_reward": 0.0,
+      "total_tasks": 2,
+      "passed_tasks": 0,
+      "per_category": {
+        "Market Analysis": 0.0,
+        "Trends": 0.0
+      },
+      "task_results": {
+        "task_000": {
+          "reward": 0.0,
+          "error": "http://agent:9009/ responded with: {'response': 'Error: Cannot connect to MCP server: Client failed to connect: All connection attempts failed', 'context_id': '529e7bf4-6149-49d3-b995-b59f8caa3cd5', 'artifacts': [], 'status': 'failed'}",
+          "passed": false
+        },
+        "task_001": {
+          "reward": 0.0,
+          "error": "http://agent:9009/ responded with: {'response': 'Error: Cannot connect to MCP server: Client failed to connect: All connection attempts failed', 'context_id': '41d8d4bd-5d95-4a8c-a9d4-f2782c9279a8', 'artifacts': [], 'status': 'failed'}",
+          "passed": false
+        }
+      },
+      "time_used": 0.0669410228729248,
+      "trace_file": "traces/run_20251227_164252_236bc24d.json"
+    }
+  ]
+}
