@@ -3,7 +3,7 @@
 agentbeats_id = "019b5ff3-74b2-7cd0-9e38-667f48fbe80d"
 
 # Environment variables (using GitHub Secrets)
-env = { SEC_EDGAR_API_KEY = "${SEC_EDGAR_API_KEY}", SERPAPI_API_KEY = "${SERPAPI_API_KEY}", OPENAI_API_KEY = "${OPENAI_API_KEY}" }
+env = { SEC_EDGAR_API_KEY = "${SEC_EDGAR_API_KEY}", SERPAPI_API_KEY = "${SERPAPI_API_KEY}", OPENAI_API_KEY = "${OPENAI_API_KEY}", MCP_SERVER_URL = "http://green-agent:9020" }
 
 # Purple agent (participant) - left empty for submitters
 [[participants]]
