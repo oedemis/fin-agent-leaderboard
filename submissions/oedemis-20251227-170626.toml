@@ -1,0 +1,21 @@
+[green_agent]
+# Your Agent ID from AgentBeats (Step 6)
+agentbeats_id = "019b5ff3-74b2-7cd0-9e38-667f48fbe80d"
+
+# Environment variables (using GitHub Secrets)
+env = { SEC_EDGAR_API_KEY = "${SEC_EDGAR_API_KEY}", SERPAPI_API_KEY = "${SERPAPI_API_KEY}", OPENAI_API_KEY = "${OPENAI_API_KEY}" }
+
+# Purple agent (participant) - left empty for submitters
+[[participants]]
+name = "agent"
+agentbeats_id = "019b601e-a0b5-7cd2-b881-31f3bf5508d3"
+env = { OPENAI_API_KEY = "${OPENAI_API_KEY}", MCP_SERVER_URL = "http://green-agent:9020" }
+
+# Benchmark configuration
+[config]
+num_tasks = 2
+categories = ["all"]
+max_steps = 50
+timeout = 600
+
+# Test trigger for workflow
