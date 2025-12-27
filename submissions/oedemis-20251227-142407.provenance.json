@@ -1,0 +1,8 @@
+{
+  "image_digests": {
+    "green-agent": "ghcr.io/oedemis/finance-agent-evaluator@sha256:d8a5b8e7ac37d180c6f6d0df09a133fd95f70d9bc7ec264192449a7dca2ea5bd",
+    "agent": "ghcr.io/oedemis/finance-agent-baseline@sha256:d9cefcb03bab972af6441e38e7bcbc3aa5819bf2a934edeb8057375bf8cd1679",
+    "agentbeats-client": "ghcr.io/agentbeats/agentbeats-client@sha256:13dfe3ef4e583a80e7ce2fe3becd0ce3b879841368a7f4fa40b6ebbabeeb014e"
+  },
+  "timestamp": "2025-12-27T14:24:07Z"
+}
