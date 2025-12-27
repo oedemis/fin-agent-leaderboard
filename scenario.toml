@@ -1,21 +1,15 @@
 [green_agent]
 # Your Agent ID from AgentBeats (Step 6)
-agentbeats_id = "019b5ff3-74b2-7cd0-9e38-667f48fbe80d"  # REPLACE with your actual ID
+agentbeats_id = "019b5ff3-74b2-7cd0-9e38-667f48fbe80d"
 
 # Environment variables (using GitHub Secrets)
-env = {
-    SEC_EDGAR_API_KEY = "${SEC_EDGAR_API_KEY}",
-    SERPAPI_API_KEY = "${SERPAPI_API_KEY}",
-    OPENAI_API_KEY = "${OPENAI_API_KEY}"
-}
+env = { SEC_EDGAR_API_KEY = "${SEC_EDGAR_API_KEY}", SERPAPI_API_KEY = "${SERPAPI_API_KEY}", OPENAI_API_KEY = "${OPENAI_API_KEY}" }
 
 # Purple agent (participant) - left empty for submitters
 [[participants]]
 name = "agent"
-agentbeats_id = "019b601e-a0b5-7cd2-b881-31f3bf5508d3"  # Participants fill this
-env = {
-    OPENAI_API_KEY = "${OPENAI_API_KEY}"
-}
+agentbeats_id = "019b601e-a0b5-7cd2-b881-31f3bf5508d3"
+env = { OPENAI_API_KEY = "${OPENAI_API_KEY}" }
 
 # Benchmark configuration
 [config]
