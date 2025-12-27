@@ -1,16 +1,25 @@
 [green_agent]
-agentbeats_id = ""
-env = { API_KEY = "${GITHUB_SECRET_NAME}", LOG_LEVEL = "INFO" }
+# Your Agent ID from AgentBeats (Step 6)
+agentbeats_id = "019b5ff3-74b2-7cd0-9e38-667f48fbe80d"  # REPLACE with your actual ID
 
+# Environment variables (using GitHub Secrets)
+env = {
+    SEC_EDGAR_API_KEY = "${SEC_EDGAR_API_KEY}",
+    SERPAPI_API_KEY = "${SERPAPI_API_KEY}",
+    OPENAI_API_KEY = "${OPENAI_API_KEY}"
+}
+
+# Purple agent (participant) - left empty for submitters
 [[participants]]
-agentbeats_id = ""
-name = "role_1_name"
-env = {}
+name = "agent"
+agentbeats_id = "019b601e-a0b5-7cd2-b881-31f3bf5508d3"  # Participants fill this
+env = {
+    OPENAI_API_KEY = "${OPENAI_API_KEY}"
+}
 
-[[participants]]
-agentbeats_id = ""
-name = "role_2_name"
-env = {}
-
+# Benchmark configuration
 [config]
-# Add your assessment config here
+num_tasks = 2
+categories = ["all"]
+max_steps = 50
+timeout = 600
